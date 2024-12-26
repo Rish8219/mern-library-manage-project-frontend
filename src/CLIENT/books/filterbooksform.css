@@ -1,0 +1,68 @@
+/* General form styles */
+.filter-form {
+  display: flex;
+  flex-direction: column;
+  background-color: #f8f9fa; /* Light gray background for the form */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  padding: 30px; /* Increased padding for a spacious feel */
+  margin: 20px; /* Margin around the form */
+}
+
+/* Form title */
+.filter-form h2 {
+  font-size: 1.8rem; /* Larger font size for the title */
+  color: #333; /* Darker color for better readability */
+  margin-bottom: 20px; /* Space below the title */
+  text-align: center; /* Center the title */
+}
+
+/* Input fields */
+.filter-form input[type="text"],
+.filter-form select {
+  border: 1px solid #ccc; /* Light gray border */
+  border-radius: 5px; /* Rounded corners for inputs */
+  padding: 12px; /* Padding inside the input */
+  margin-bottom: 15px; /* Space between inputs */
+  font-size: 1rem; /* Font size */
+  transition: border-color 0.3s, box-shadow 0.3s; /* Transition for border color and shadow */
+}
+
+/* Input focus effect */
+.filter-form input[type="text"]:focus,
+.filter-form select:focus {
+  border-color: #007bff; /* Change border color on focus */
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Add shadow on focus */
+  outline: none; /* Remove default outline */
+}
+
+/* Button styles */
+.filter-form button {
+  background-color: #007bff; /* Bootstrap primary color */
+  color: white; /* White text */
+  border: none; /* No border */
+  border-radius: 5px; /* Rounded corners */
+  padding: 12px 20px; /* Padding for button */
+  font-size: 1rem; /* Font size */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s, transform 0.2s; /* Transition for background color and scale */
+}
+
+/* Button hover effect */
+.filter-form button:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+  transform: scale(1.05); /* Slightly scale up on hover */
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  .filter-form {
+    margin: 10px; /* Reduce margin on smaller screens */
+  }
+
+  .filter-form input[type="text"],
+  .filter-form select,
+  .filter-form button {
+    font-size: 0.9rem; /* Slightly smaller font size */
+  }
+}

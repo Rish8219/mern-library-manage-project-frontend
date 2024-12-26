@@ -1,0 +1,165 @@
+/* 
+
+.card-body {
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.card-body > p::before {
+  content: 'by ';
+}
+
+.card-title {
+  width: 100%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.card-text {
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.card-img-top {
+  height: 400px !important;
+  width: 100% !important;
+  object-fit: cover !important;
+}
+
+@media screen and (max-width: 1366px) {
+  .card-img-top {
+    height: 300px !important;
+  }
+  .card-text {
+    font-size: 1rem;
+  }
+
+  .card-body button {
+    font-size: 0.8rem;
+  }
+
+  .card {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .card-img-top {
+    height: 250px !important;
+  }
+  .card-text {
+    font-size: 1rem;
+  }
+
+  .card-body button {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .card-img-top {
+    height: 200px !important;
+  }
+
+  .card-body button {
+    font-size: 0.6rem;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .card-img-top {
+    height: 180px !important;
+  }
+} */
+/* CSS to manage all books CARD sizes and shapes */
+
+.card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s;
+  border-radius: 10px;
+  overflow: hidden; /* Ensure content doesn't overflow the rounded corners */
+  margin: 15px; /* Add margin for spacing */
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card-body {
+  white-space: nowrap;
+  overflow: hidden;
+  background-color: #f9f9f9; /* Light gray background */
+  padding: 20px; /* Add padding for content */
+}
+
+.card-body > p::before {
+  content: 'by ';
+}
+
+.card-title {
+  width: 100%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  font-size: 1.5rem; /* Increased font size */
+  font-weight: bold; /* Bold title */
+}
+
+.card-text {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  font-size: 1rem; /* Consistent font size */
+  color: #555; /* Darker text color for better readability */
+}
+
+.card-img-top {
+  height: 400px !important;
+  width: 100% !important;
+  object-fit: cover !important;
+  transition: transform 0.3s; /* Add transition for image */
+}
+
+.card:hover .card-img-top {
+  transform: scale(1.1); /* Scale image on hover */
+}
+
+.card-body button {
+  background-color: #007bff; /* Bootstrap primary color */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  font-size: 0.8rem; /* Default button font size */
+  transition: background-color 0.3s;
+}
+
+.card-body button:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+}
+
+@media screen and (max-width: 1366px) {
+  .card-img-top {
+    height: 300px !important;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .card-img-top {
+    height: 250px !important;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .card-img-top {
+    height: 200px !important;
+  }
+
+  .card-body button {
+    font-size: 0.6rem;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .card-img-top {
+    height: 180px !important;
+  }
+}

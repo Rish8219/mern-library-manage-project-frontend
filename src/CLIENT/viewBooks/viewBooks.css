@@ -1,0 +1,88 @@
+/* @media screen and (min-width: 992px) {
+  .image-div {
+    text-align: right !important;
+    width: fit-content !important;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .image-div {
+    text-align: center !important;
+    width: fit-content !important;
+  }
+} */
+
+
+/* ViewBooks.css */
+
+.view-books-container {
+  padding: 2rem;
+  background-color: #f9f9f9; /* Light background */
+  max-width: 1200px; /* Max width for the container */
+  margin: auto; /* Center the container */
+}
+
+.page-title {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #333; /* Dark text color */
+  margin-bottom: 2rem; /* Space below the title */
+}
+
+.books-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Responsive grid */
+  gap: 1.5rem; /* Space between cards */
+}
+
+.book-card {
+  background-color: #fff; /* White background for cards */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+  overflow: hidden; /* Hide overflow */
+  transition: transform 0.3s; /* Smooth transition for hover effect */
+}
+
+.book-card:hover {
+  transform: translateY(-5px); /* Lift effect on hover */
+}
+
+.book-cover {
+  width: 100%; /* Full width for the cover image */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.book-info {
+  padding: 1rem; /* Padding inside the card */
+}
+
+.book-title {
+  font-size: 1.5rem; /* Title size */
+  color: #007bff; /* Primary color for title */
+  margin: 0.5rem 0; /* Space around title */
+}
+
+.book-author {
+  font-size: 1rem; /* Author size */
+  color: #555; /* Darker gray for author */
+}
+
+.book-description {
+  font-size: 0.9rem; /* Description size */
+  color: #777; /* Lighter gray for description */
+  margin: 0.5rem 0; /* Space around description */
+}
+
+.view-button {
+  background-color: #007bff; /* Primary button color */
+  color: #fff; /* White text */
+  border: none; /* No border */
+  border-radius: 5px; /* Rounded corners */
+  padding: 0.5rem 1rem; /* Padding for button */
+  cursor: pointer; /* Pointer cursor */
+  transition: background-color 0.3s; /* Smooth transition for hover */
+}
+
+.view-button:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+}

@@ -1,0 +1,88 @@
+/* 
+.otp-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.otp-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+} */
+/* General OTP form styles */
+.otp-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff; /* White background for the form */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  padding: 30px; /* Increased padding for a spacious feel */
+  margin: 20px; /* Margin around the form */
+}
+
+/* Title styling */
+.otp-form h2 {
+  font-size: 1.8rem; /* Larger font size for the title */
+  color: #333; /* Darker color for better readability */
+  margin-bottom: 20px; /* Space below the title */
+  text-align: center; /* Center the title */
+}
+
+/* OTP input container */
+.otp-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+/* Individual OTP input fields */
+.otp-input {
+  width: 50px; /* Fixed width for each input */
+  height: 50px; /* Fixed height for each input */
+  font-size: 1.5rem; /* Larger font size for better visibility */
+  text-align: center; /* Center text in input */
+  border: 2px solid #ccc; /* Light gray border */
+  border-radius: 5px; /* Rounded corners */
+  margin: 0 5px; /* Space between inputs */
+  transition: border-color 0.3s, box-shadow 0.3s; /* Transition for border color and shadow */
+}
+
+/* Input focus effect */
+.otp-input:focus {
+  border-color: #007bff; /* Change border color on focus */
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Add shadow on focus */
+  outline: none; /* Remove default outline */
+}
+
+/* Submit button styles */
+.otp-form button {
+  background-color: #007bff; /* Bootstrap primary color */
+  color: white; /* White text */
+  border: none; /* No border */
+  border-radius: 5px; /* Rounded corners */
+  padding: 12px 20px; /* Padding for button */
+  font-size: 1rem; /* Font size */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s, transform 0.2s; /* Transition for background color and scale */
+}
+
+/* Button hover effect */
+.otp-form button:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+  transform: scale(1.05); /* Slightly scale up on hover */
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  .otp-input {
+    width: 40px; /* Adjust width for smaller screens */
+    height: 40px; /* Adjust height for smaller screens */
+    font-size: 1.2rem; /* Slightly smaller font size */
+  }
+
+  .otp-form {
+    padding: 20px; /* Reduce padding on smaller screens */
+  }
+}

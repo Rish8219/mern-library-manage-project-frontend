@@ -1,0 +1,84 @@
+/* navbar.css */
+
+/* General Navbar Styles */
+.navbar {
+  background: linear-gradient(90deg, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
+  padding: 1rem 2rem; /* Add padding for better spacing */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+}
+
+.navbar .navbar-brand {
+  display: flex; /* Use flexbox for alignment */
+  align-items: center; /* Center items vertically */
+}
+
+.navbar-title {
+  font-weight: bold;
+  font-size: 1.8rem; /* Increase font size */
+  color: #b71111; /* White text for title */
+  text-shadow: 2px 2px 4px rgba(179, 0, 0, 0.5); /* Add shadow for depth */
+  margin-left: 10px; /* Space between logo and title */
+  transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.navbar-title:hover {
+  color: rgba(255, 235, 59, 0.8); /* Change color on hover */
+}
+
+/* Button-like styles for nav links */
+.navbar .nav-link {
+  color: hsl(0, 0%, 0%); /* White text for links */
+  margin: 0 1rem; /* Add margin for spacing between links */
+  padding: 0.5rem 1rem; /* Add padding to make it look like a button */
+  border: none; /* Remove border */
+  border-radius: 5px; /* Rounded corners */
+  background-color: transparent; /* Transparent background */
+  transition: background-color 0.5s ease, all 0.3s ease; /* Smooth transition for hover effect */
+  text-align: center; /* Center text */
+  display: inline-block; /* Make it behave like a block element */
+}
+
+.navbar .nav-link:hover {
+  background-color: rgba(255, 235, 59, 0.8); /* Light background on hover */
+  color: #054402; /* Change text color on hover */
+  /* padding: 0.0rem 0.7rem 0.0rem 0.7rem; */
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+  background-color: #121212; /* Dark background */
+  color: #ffffff; /* Light text */
+}
+
+.navbar.dark-mode {
+  background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(34, 34, 34, 1) 100%); /* Dark gradient */
+}
+
+.navbar.dark-mode .nav-link {
+  color: #ffffff; /* Light link color */
+}
+
+.navbar.dark-mode .nav-link:hover {
+  background-color: rgba(187, 134, 252, 0.8); /* Light background on hover in dark mode */
+  color: #000; /* Change text color on hover in dark mode */
+}
+
+/* Dark Mode Toggle Switch */
+.form-check {
+  margin-left: 1rem; /* Add margin for spacing */
+}
+
+.form-check-input {
+ cursor: pointer; /* Change cursor to pointer */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 0.5rem 1rem; /* Adjust padding for mobile */
+  }
+
+  .navbar .nav-link {
+    margin: 0 0.5rem; /* Reduce margin for mobile */
+  }
+}
